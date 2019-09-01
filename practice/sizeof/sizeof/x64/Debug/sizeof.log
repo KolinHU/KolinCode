@@ -1,0 +1,8 @@
+﻿  test.c
+c:\users\hlc24\desktop\kolincode\practice\sizeof\sizeof\test.c(18): warning C4013: “malloc”未定义；假设外部返回 int
+c:\users\hlc24\desktop\kolincode\practice\sizeof\sizeof\test.c(18): warning C4312: “类型强制转换”: 从“int”转换到更大的“char *”
+c:\users\hlc24\desktop\kolincode\practice\sizeof\sizeof\test.c(12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\hlc24\desktop\kolincode\practice\sizeof\sizeof\test.c(45): warning C4047: “函数”:“char *”与“char (*)[10]”的间接级别不同
+c:\users\hlc24\desktop\kolincode\practice\sizeof\sizeof\test.c(45): warning C4024: “convert”: 形参和实参 1 的类型不同
+c:\users\hlc24\desktop\kolincode\practice\sizeof\sizeof\test.c(50): warning C4013: “system”未定义；假设外部返回 int
+  sizeof.vcxproj -> C:\Users\hlc24\Desktop\KolinCode\practice\sizeof\x64\Debug\sizeof.exe

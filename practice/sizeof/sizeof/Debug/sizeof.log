@@ -1,5 +1,4 @@
-﻿  sizeof.c
-c:\users\hlc24\desktop\coding\practice\sizeof.c(6): warning C4013: “malloc”未定义；假设外部返回 int
-c:\users\hlc24\desktop\coding\practice\sizeof.c(19): warning C4013: “strlen”未定义；假设外部返回 int
-c:\users\hlc24\desktop\coding\practice\sizeof.c(6): warning C4047: “初始化”:“char *”与“int”的间接级别不同
-  sizeof.vcxproj -> C:\Users\hlc24\Desktop\coding\practice\sizeof\Debug\sizeof.exe
+﻿  test.c
+c:\users\hlc24\desktop\kolincode\practice\sizeof\sizeof\test.c(13): warning C4013: “system”未定义；假设外部返回 int
+c:\users\hlc24\desktop\kolincode\practice\sizeof\sizeof\test.c(8): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明

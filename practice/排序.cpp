@@ -153,33 +153,31 @@ void InsertSort(vector<int> &vi)
 
 void BinInsertSort(vector<int> &vi)
 {
-	for(int i=1;i<vi.size();i++)
+	for (int i = 1; i < vi.size(); i++)
 	{
-		int left=0;
-		int right=i-1;
-		int temp=vi[i]
-		while(left<=right)
+		int left = 0;
+		int right = i - 1;
+		int temp = vi[i];
+		while (left <= right)
 		{
-			int mid=(left+right)/2; //二分区域
-			if(vi[mid]>temp)
+			int mid = (left + right) / 2; //二分区域
+			if (vi[mid] > temp)
 			{
-				right=mid-1;       //向左缩小区域
+				right = mid - 1; //向左缩小区域
 			}
 			else
 			{
-				left=mid+1;        //向右缩小区域
+				left = mid + 1; //向右缩小区域
 			}
-		
 		}
 
-		for(int j=i-1;j>left;j--)  //vi[left,i-1]的元素整体后移
+		for (int j = i - 1; j > left; j--) //vi[left,i-1]的元素整体后移
 		{
-			vi[j+1]=vi[j];
+			vi[j + 1] = vi[j];
 		}
-		vi[left]=temp;
+		vi[left] = temp;
 	}
 }
-
 
 //希尔排序
 

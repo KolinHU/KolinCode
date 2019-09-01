@@ -1,4 +1,49 @@
 
+/*
+=========================
+====字符串相关操作总结====
+=========================
+*/
+
+/*
+1. 输入单个字符串
+可以使用scanf函数，以空格为分割输入字符串
+*/
+
+#include "stdio.h"
+#include "string.h"
+
+int main()
+{
+	char str[100];
+	/* 一个一个输入字符，以空格结尾 */
+	while (scanf("%s", &str) != EOF) {
+		printf("%s\n", str);
+	}
+
+	return 0;
+	system("PAUSE");
+}
+
+
+/*
+2. 输入整行字符串
+可以使用gets函数，以 '\n' 为分割输入整行字符串
+*/
+#include "stdio.h"
+#include "string.h"
+
+int main()
+{
+	char str[100];
+	/* 以'\n'分割输入整行字符串 */
+	while (gets(str) != NULL) {
+		printf("%s\n", str);
+	}
+
+	return 0;
+	system("PAUSE");
+}
 
 //字符串比较
 bool strcmp(const char*str1,const char *str2)

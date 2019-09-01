@@ -1,0 +1,46 @@
+C语言中常见的字符串处理函数
+
+C语言中提供了大量丰富的字符串处理函数，大致可以分为字符串的输入，输出，合并，修改，比较，转换，复制，搜索几类。 
+用于输入输出的函数包含在stdio.h中而其他的字符串处理函数一般包含在string.h中。
+
+1:字符串的输出函数 
+int puts(char const*strPtr); 
+输出字符串到显示器中去，传入的实参可以是字符串数组也也可以是字符指针 
+一般情况下我们用fputs来代替
+
+2:字符串的输入函数 
+char *gets(char *strptr); 
+char *fgets(); 
+从标准键盘输入一个字符串存放到指针strptr指向的字符数组，一般我们使用fgets来操作
+
+3:获取字符串的长度 
+int strlen(char const*string); 
+获取字符串的长度，返回的是字符的个数，但是不会包括’\0’,结束符
+
+4:字符串拷贝函数 
+char *strcpy(char*des,char*src); 
+char *strncpy(char *des,char *src,int size); 
+将src指向的字符串拷贝到des指向的字符串数组中去，结束符也一同进行拷贝，size参数也可以拷贝制定长度的字符串，建议des为字符数组 
+注意:目标尽量使用字符数组，因为如果是字符指针的话，分配的内存在常量池中，是不允许进行改变的，容易造成段错误
+
+5:字符串的连接函数 
+char * strcat(const *char str1,const *char str2); 
+char *strncat(const *char str1,const *char str2,int size); 
+将str2指向的字符串连接到str1指向的字符后面，同时会删除str1后面的’\0’,返回的是str1指向字符串的首地址重点内容
+
+6:字符串比较函数 
+int strcmp(const char * str1,const char *str2); 
+int strncmp(const char*str1,const char *str2,int size); 
+按照ascii码来进行比较，并由函数返回值进行判断 
+返回0,字符串1等于字符串2, 
+大于0,字符串1大于字符串2, 
+小于0,字符串1小于字符串2,
+
+7:字符串分割函数 
+char* strtok(char *str,const char *delimiters); 
+根据delimiters指向的分割符号，将str指向的字符串分割成若干个子字符串，同时返回的是分割出的子字符串
+
+8:字符串中是否包含字符 
+char * strchr(const char *,int c);//从做往右寻找字符c 
+char * strrchr(const char *,int c); //从有往左开始寻找字符c 
+判断字符串中是否包含字符串；
